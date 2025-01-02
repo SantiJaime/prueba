@@ -4,7 +4,7 @@ import type { Request, Response } from "express";
 const app = express();
 
 app.use("/", (_req: Request, res: Response) => {
-  res.send("Hello World");
+  res.status(200).json("Hello World");
 });
 
 app.listen(3000, () => {
